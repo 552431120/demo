@@ -14,7 +14,7 @@ public abstract class Worker {
 class CxMonkey extends Worker{
     @Override
     void doWork() {
-
+        System.out.println();
     }
 }
 
