@@ -1,6 +1,9 @@
 package com.study.demo.bean;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @ClassName Person
@@ -14,6 +17,7 @@ public class Person {
     private String name;
     private Integer age;
     private Date birthday;
+    private double money;
 
     public Person() {
     }
@@ -54,5 +58,19 @@ public class Person {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person();
+        Map<String,Object> param = new HashMap<>(2,0.75f);
+        System.out.println("args = " + Arrays.deepToString(args));
     }
 }
